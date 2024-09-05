@@ -1,0 +1,9 @@
+; ---------------------------------------------------------------------------------------------------------------
+; DefaultStealable.ini
+; 
+; Config for objects than the player can steal from NPCs
+
+[DishonoredGame.DisStealable]
+
+
+

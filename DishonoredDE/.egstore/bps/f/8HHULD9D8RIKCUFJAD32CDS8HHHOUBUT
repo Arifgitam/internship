@@ -1,0 +1,13 @@
+[Configuration]
+BasedOn=..\Engine\Config\BaseEditorUserSettings.ini
+
+
+[Directories2]
+UNR=..\..\DishonoredGame\Content\Maps\
+BRUSH=..\..\DishonoredGame\Content\
+2DS=..\..\DishonoredGame\Content\
+PSA=..\..\DishonoredGame\Content\
+GenericImport=..\..\DishonoredGame\Content\
+GenericExport=..\..\DishonoredGame\Content\
+GenericOpen=..\..\DishonoredGame\Content\
+GenericSave=..\..\DishonoredGame\Content\

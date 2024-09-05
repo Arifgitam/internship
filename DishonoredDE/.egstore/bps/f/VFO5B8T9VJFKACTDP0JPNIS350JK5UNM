@@ -1,0 +1,12 @@
+
+[DishonoredGameContent.DisGadget_SpringRazorPlaced]
+m_fFarTriggerRadius=350.000000
+m_fMaxDamageDistance=500.000000
+m_fMaxTriggerDistance=300.000000
+m_fNearTriggerRadius=100.000000
+m_fNPCRecheckTimerInterval=0.250000
+m_fSensorOffsetDistance=10.000000
+m_fTriggerConeAngle=30.000000
+m_fTriggerReactionTime=0.350000
+m_TriggerAnimName=Test_RazorBlade
+

@@ -1,0 +1,48 @@
+[Configuration]
+BasedOn=..\Engine\Config\BaseCompat.ini
+
+// for hardware configurations below the minimum specs
+[AppCompatBucket1]
+ResX=800
+ResY=600
+bAllowLightShafts=False
+TextureForcedLODBias=1					//DISHONORED: bmartin (2011-08-26) - Setting for texture quality
+SkeletalLODDistanceFactorMultiplier=1 // DIHONORED 1 = normal, 0= never use low LOD
+iType_AntiAlias=0	//DISHONORED: olhermite (2012-07-26) see engineArkPClasses.h, EPpAa_None=0, EPpAa_Mlaa=1, EPpAa_Fxaa=2
+bAllowRatsShadow=False
+UseVsync=False
+
+// for hardware configurations at minimum specs
+[AppCompatBucket2]
+ResX=1280
+ResY=720
+bAllowLightShafts=True
+TextureForcedLODBias=0					//DISHONORED: bmartin (2011-08-26) - Setting for texture quality
+SkeletalLODDistanceFactorMultiplier=1 // DIHONORED 1 = normal, 0= never use low LOD
+iType_AntiAlias=2	//DISHONORED: olhermite (2012-07-26) see engineArkPClasses.h, EPpAa_None=0, EPpAa_Mlaa=1, EPpAa_Fxaa=2
+bAllowRatsShadow=False
+UseVsync=False
+
+// for hardware configurations above minimum specs but not high end
+[AppCompatBucket3]
+ResX=1600
+ResY=900
+bAllowLightShafts=True
+TextureForcedLODBias=0					//DISHONORED: bmartin (2011-08-26) - Setting for texture quality
+SkeletalLODDistanceFactorMultiplier=1 // DIHONORED 1 = normal, 0= never use low LOD
+iType_AntiAlias=1	//DISHONORED: olhermite (2012-07-26) see engineArkPClasses.h, EPpAa_None=0, EPpAa_Mlaa=1, EPpAa_Fxaa=2
+bAllowRatsShadow=False
+UseVsync=True
+
+// for hardware configurations above minimum specs but not high end
+[AppCompatBucket4]
+ResX=1600
+ResY=900
+bAllowLightShafts=True
+TextureForcedLODBias=0					//DISHONORED: bmartin (2011-08-26) - Setting for texture quality
+SkeletalLODDistanceFactorMultiplier=1 // DIHONORED 1 = normal, 0= never use low LOD
+iType_AntiAlias=1	//DISHONORED: olhermite (2012-07-26) see engineArkPClasses.h, EPpAa_None=0, EPpAa_Mlaa=1, EPpAa_Fxaa=2
+bAllowRatsShadow=False
+UseVsync=True
+
+

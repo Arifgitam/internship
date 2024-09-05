@@ -1,0 +1,633 @@
+; ****************************************** Main page ******************************************
+
+[Restart Level]
+CloseMenuOnValidation=true
+Commands="restartlevel"
+
+[Playtest Mode]
+Texts= Enable >>
+Commands=SetPlaytestFlag 1
+Texts= << Disable
+Commands=SetPlaytestFlag 0
+
+[Play DLC07]
+
+CloseMenuOnValidation=true
+
+Texts= Launch/Reset DLC07 Menu >>
+Commands=start L_DLC07_GameFull_P
+
+Texts= Start New DLC07 Campaign >>
+Commands=ce ChangeLvl_StartNewGameInCorvoBattle
+
+Texts= Skip to Prison >>
+Commands=ce ChangeLvl_fromBase_toPrison
+
+Texts= Skip to Draper's Ward >>
+Commands=ce ChangeLvl_fromPrison_to_Draper
+
+Texts= Skip to Brigmore Manor >>
+Commands=ce ChangeLvl_fromDraper_toBrigmore
+
+[Play Daud DLC]
+CloseMenuOnValidation=true
+
+Texts= Launch/Reset Daud DLC Menu >>
+Commands=start DLC06_DishonoredGameFull_P
+
+Texts= Start New Daud Campaign >>
+Commands=ce ChangeLvl_StartNewGameInTower
+
+Texts= Skip to Slaughterhouse >>
+Commands=ce ChangeLvl_fromVoid_toSlaughterHouseExt
+
+Texts= Skip to Legal District >>
+Commands=ce ChangeLvl_fromSlaughterHouse_toTimshStreets
+
+Texts= Skip to Flooded Assault >>
+Commands=ce ChangeLvl_fromTimsh_toDaudBase
+
+
+[Play Challenge DLC (Normal)]
+CloseMenuOnValidation=true
+
+Texts= Bonfires (Countdown) >>
+Commands=DLC05StartChallenge DDCL_Countdown FALSE
+
+Texts= << Train Runner (Race) >>
+Commands=DLC05StartChallenge DDCL_Race FALSE
+
+Texts= << Kill Cascade (Drop Attack) >>
+Commands=DLC05StartChallenge DDCL_DropAttack FALSE
+
+Texts= << Oil Drop (Oil Rain) >>
+Commands=DLC05StartChallenge DDCL_OilRain FALSE
+
+Texts= << Back Alley Brawl (Arena) >>
+Commands=DLC05StartChallenge DDCL_Arena FALSE
+
+Texts= << Burglar (Thief) >>
+Commands=DLC05StartChallenge DDCL_Thief FALSE
+
+Texts= << Bend Time Massacre >>
+Commands=DLC05StartChallenge DDCL_BendTimeMassacre FALSE
+
+Texts= << Assassin’s Run (Assassin's Training) >>
+Commands=DLC05StartChallenge DDCL_AssassinTraining FALSE
+
+Texts= << Kill Chain (Chain Kill) >>
+Commands=DLC05StartChallenge DDCL_ChainKill FALSE
+
+Texts= << Mystery Foe (Mystery Man)
+Commands=DLC05StartChallenge DDCL_MysteryMan FALSE
+
+
+[Play Challenge DLC (Expert)]
+CloseMenuOnValidation=true
+
+Texts= Bonfires (Countdown) >>
+Commands=DLC05StartChallenge DDCL_Countdown TRUE
+
+Texts= << Train Runner (Race) >>
+Commands=DLC05StartChallenge DDCL_Race TRUE
+
+Texts= << Kill Cascade (Drop Attack) >>
+Commands=DLC05StartChallenge DDCL_DropAttack TRUE
+
+Texts= << Back Alley Brawl (Arena) >>
+Commands=DLC05StartChallenge DDCL_Arena TRUE
+
+Texts= << Burglar (Thief) >>
+Commands=DLC05StartChallenge DDCL_Thief TRUE
+
+Texts= << Mystery Foe (Mystery Man)
+Commands=DLC05StartChallenge DDCL_MysteryMan TRUE
+
+
+[Play Campaign]
+CloseMenuOnValidation=true
+Texts= New Game >>
+Commands=ce ChangeLvl_StartNewGame 
+
+Texts= << Skip to Dunwall Tower >>
+Commands=ce ChangeLvl_fromPrison_toTower
+
+Texts= << Skip to Prison >>
+Commands=ce ChangeLvl_fromTower_toPrison
+
+Texts= << Skip to Prison Sewer >>
+Commands=ce ChangeLvl_fromPrison_toSewer
+
+Texts= << Skip to HUB Visit 01 >>
+Commands=ce SkiptoFirstHUB
+
+Texts= << Skip to Outsider Dream >>
+Commands=ce SkipToOutsiderDream
+
+Texts= << Skip to HUB Visit 01 Sleep >>
+Commands=ce SkiptoFirstHUB_Sleep
+
+Texts= << Skip to Street 1 >>
+Commands=ce ChangeLvl_fromHub_toStreets1
+
+Texts= << Skip to Overseer >>
+Commands=ce ChangeLvl__fromStreets1_toOverseerOffice
+
+Texts= << Skip to HUB Visit 02 >>
+Commands=ce SkiptoHubFromovrsr
+
+Texts= << Skip to HUB Visit 02 Sleep >>
+Commands=ce SkipTotHub02_Sleep_FromOverseer
+
+Texts= << Skip to Streets 2 >>
+Commands= ce ChangeLvl_fromHub_toStreets2
+
+Texts= << Skip to Brothel >>
+Commands= ce ChangeLvl_fromStreets2_toBrothel
+
+Texts= << Skip to HUB Visit 03 >>
+Commands=ce SkiptoHubFromBrothel
+
+Texts= << Skip to Bridge >>
+Commands=ce ChangeLvl_fromHub_toBridge
+
+Texts= << Skip to Bridge Part2 (E3 Demo) >>
+Commands=ce changelvl_debug_bridge_1c2
+
+Texts= << Skip to HUB Visit 04 >>
+Commands=ce SkiptoHubFromBridge
+
+Texts= << Skip to HUB Visit 04 Sleep >>
+Commands=ce SkipTotHub04_Sleep_FromBridge
+
+Texts= << Skip to Boyle >>
+Commands= ce ChangeLvl_fromHub_toBoyle
+
+Texts= << Skip to HUB Visit 05 >>
+Commands=ce SkiptoHubFromBoyle
+
+Texts= << Skip to Tower Return >>
+Commands= ce ChangeLvl_fromHub_TowerReturnYard
+
+Texts= << Skip to HUB Visit 06 >>
+Commands=ce SkiptoHubFromTowerReturn
+
+Texts= << Skip to Flooded District >>
+Commands= ce ChangeLvl_fromHub_toFloodedDistrict
+
+Texts= << Skip to Street Sewer >>
+Commands= ce ChangeLvl_fromFGate_toStreetSewer
+
+Texts= << Skip to Street Sewer -- Player Met Granny & Slackjaw >>
+Commands= ce ChangeLvl_fromFGate_toStreetSewer_MetGranny
+
+Texts= << Skip to HUB Visit 07 >>
+Commands= ce ChangeLvl_fromStreetSewer_toHub7
+
+Texts= << Skip to Lighthouse High Chaos >>
+Commands= ce ChangeLvl_LoadighthouseIsland_HC
+
+Texts= << Skip to Lighthouse Low Chaos >>
+Commands= ce ChangeLvl_LoadighthouseIsland_LC
+
+Texts= << Skip to Outro (Low Chaos) >>
+Commands= ce ChangeLvl_toEpilogueLowChaos
+
+Texts= << Skip to Outro (High Chaos) >>
+Commands= ce ChangeLvl_toEpilogueHighChaos
+
+Texts= << Reset Campaign
+Commands= start DishonoredGameFull_P
+
+
+[Load Test Map]
+CloseMenuOnValidation=true
+Texts=DLC07 Transition Test Map (Test for Loading) >>
+Commands=start DLC07_FT_Transition
+Texts=Combat Test Map >>
+Commands=start FT_combat
+Texts=Combat Test Map (DLC06) >>
+Commands=start DLC06_FT_combat
+Texts=<< Misc Mechanics Test Map >>
+Commands=start FT_Mechanics
+Texts=<< Characters Test Map >>
+Commands=start Mit_hallway01
+Texts=<< Routine Test Map >>
+Commands=start FT_Routine
+Texts=<< Localization Test Map
+Commands=start Loc_Test
+
+
+[Save Game]
+CloseMenuOnValidation=true
+Texts=Quick Save >>
+Commands=dis_save 12
+Texts=<< Save to Slot 00 >>
+Commands=dis_save 13
+Texts=<< Save to Slot 01 >>
+Commands=dis_save 14
+Texts=<< Save to Slot 02 >>
+Commands=dis_save 15
+Texts=<< Save to Slot 03 >>
+Commands=dis_save 16
+Texts=<< Save to Slot 04 >>
+Commands=dis_save 17
+Texts=<< Save to Slot 05 >>
+Commands=dis_save 18
+Texts=<< Save to Slot 06 >>
+Commands=dis_save 19
+Texts=<< Save to Slot 07 >>
+Commands=dis_save 20
+Texts=<< Save to Slot 08 >>
+Commands=dis_save 21
+Texts=<< Save to Slot 09
+Commands=dis_save 22
+
+
+[Load Game]
+CloseMenuOnValidation=true
+Texts=Load Last Saved Game >>
+Commands=dis_load 0
+Texts=<< Load Quick Save >>
+Commands=dis_load 12
+Texts=<< Load Auto-Save >>
+Commands=dis_load -2
+Texts=<< Load Previous Auto-Save >>
+Commands=dis_load -3
+Texts=<< Load Mission 00 >>
+Commands=dis_load 1
+Texts=<< Load Mission 01 >>
+Commands=dis_load 2
+Texts=<< Load Mission 02 >>
+Commands=dis_load 3
+Texts=<< Load Mission 03 >>
+Commands=dis_load 4
+Texts=<< Load Mission 04 >>
+Commands=dis_load 5
+Texts=<< Load Mission 05 >>
+Commands=dis_load 6
+Texts=<< Load Mission 06 >>
+Commands=dis_load 7
+Texts=<< Load Mission 07 >>
+Commands=dis_load 8
+Texts=<< Load Mission 08 >>
+Commands=dis_load 9
+Texts=<< Load Save Slot 00 >>
+Commands=dis_load 13
+Texts=<< Load Save Slot 01 >>
+Commands=dis_load 14
+Texts=<< Load Save Slot 02 >>
+Commands=dis_load 15
+Texts=<< Load Save Slot 03 >>
+Commands=dis_load 16
+Texts=<< Load Save Slot 04 >>
+Commands=dis_load 17
+Texts=<< Load Save Slot 05 >>
+Commands=dis_load 18
+Texts=<< Load Save Slot 06 >>
+Commands=dis_load 19
+Texts=<< Load Save Slot 07 >>
+Commands=dis_load 20
+Texts=<< Load Save Slot 08 >>
+Commands=dis_load 21
+Texts=<< Load Save Slot 09
+Commands=dis_load 22
+
+
+[Game Difficulty]
+CloseMenuOnValidation=true
+Texts=Normal >>
+Commands=SetDifficulty 1
+Texts=<< Easy >>
+Commands=SetDifficulty 0
+Texts=<< Hard (Default) >>
+Commands=SetDifficulty 2
+Texts=<< Very Hard
+Commands=SetDifficulty 3
+
+
+[GhostMode]
+Texts=ON >>
+Commands=ghost
+Texts=<< OFF
+Commands=walk
+
+
+[GodMode]
+Texts=God >>
+Commands=God
+Texts=<< GodNPC
+Commands=GodNPC
+
+
+[Mana]
+Texts=Refill Mana >>
+Commands=Manaadd 20
+Texts=<< Toggle Mana Cost
+Commands=Manatoggle 1
+
+
+[BuddhaMode]
+Texts=Buddha
+Commands=Buddha
+
+
+[All Powers]
+Texts=Max Out >>
+Commands=MaxPowers
+Texts=<< Remove All
+Commands=MinPowers
+
+
+[Runes]
+Texts=Give 1 Rune >>
+Commands=GiveRunes 1
+Texts=<< Give 5 Rune >>
+Commands=GiveRunes 5
+Texts=<< Give 10 Rune >>
+Commands=GiveRunes 10
+Texts=<< Give All Runes
+Commands=GiveRunes 24
+
+
+[Bone Charms]
+Texts=Give one random bone charm
+Commands=givebonecharm
+Texts=Give one random cracked bone charm
+Commands=givecrackedbonecharm
+
+
+[Active Powers]
+Texts=Bend Time Lvl 1 >>
+Commands=addpower bendtime 1
+Texts=<< Bend Time Lvl 2 >>
+Commands=addpower bendtime 2
+Texts=<< Transversal Lvl 1 >>
+Commands=addpower transversal 1
+Texts=<< Transversal Lvl 2 >>
+Commands=addpower transversal 2
+Texts=<< Dark Vision Lvl 1 >>
+Commands=addpower darkvision 1
+Texts=<< Dark Vision Lvl 2 >>
+Commands=addpower darkvision 2
+Texts=<< Summon Assassin Lvl 1 >>
+Commands=addpower summonassassin 1
+Texts=<< Summon Assassin Lvl 2 >>
+Commands=addpower summonassassin 2
+Texts=<< Daud Dark Vision Lvl 1 >>
+Commands=addpower dauddarkvision 1
+Texts=<< Daud Dark Vision Lvl 2
+Commands=addpower dauddarkvision 2
+Texts=<< Pull Lvl 1 >>
+Commands=addpower pull 1
+Texts=<< Pull Lvl 2 >>
+Commands=addpower pull 2
+
+[Passive Powers]
+Texts=Vitality Lvl 1 >>
+Commands=addpower vitality 1
+Texts=<< Vitality Lvl 2 >>
+Commands=addpower vitality 2
+Texts=<< Celerity Lvl 1 >>
+Commands=addpower celerity 1
+Texts=<< Celerity Lvl 2 >>
+Commands=addpower celerity 2
+Texts=<< Bloodthirsty Lvl 1 >>
+Commands=addpower bloodthirsty 1
+Texts=<< Bloodthirsty Lvl 2 >>
+Commands=addpower bloodthirsty 2
+Texts=<< Shadow Kill Lvl 1 >>
+Commands=addpower shadowkill 1
+Texts=<< Shadow Kill Lvl 2
+Commands=addpower shadowkill 2
+Texts=<< Arcane Bond Lvl 1 >>
+Commands=addpower arcanebond 1
+Texts=<< Arcane Bond Lvl 2
+Commands=addpower arcanebond 2
+
+
+[Ammo]
+Texts=Toggle Infinite Ammo
+Commands=playerinfiniteammo
+
+
+[Weapons / Weapons Upgrades]
+
+Texts=Max Out Items, Ammo, and Upgrades >>
+Commands=MaxItems
+
+Texts=Max Out Upgrades >>
+Commands=MaxUpgrades
+
+Texts=<< Give Corvo Sword >>
+Commands=giveplayeritem DisTweaks_WepSword'Twk_Inv_PlayerSpecific.Twk_Inv_SwordCorvo'
+
+Texts=<< Give Corvo Crossbow >>
+Commands=giveplayeritem DisTweaks_WepCrossbow'Twk_Inv_PlayerSpecific.Twk_Inv_CrossbowCorvo'
+
+Texts=<< Give Corvo Pistol >>
+Commands=addupgrade Twk_Upgrade_Pistol
+
+Texts=<< Unlock Sticky Grenade >>
+Commands=addupgrade Twk_Upgrade_StickyGrenade
+
+Texts=<< Unlock Explosive Bullets >>
+Commands=addupgrade Twk_Upgrade_Gun_Explosive
+
+Texts=<< Unlock Instant Sleep Arrows >>
+Commands=addupgrade Twk_Upgrade_InstantSleepArrow
+
+Texts=<< Unlock Crossbow Accuracy  >>
+Commands=addupgrade Twk_Upgrade_Crossbow_Accuracy
+
+Texts=<< Unlock Crossbow Range Upgrade >>
+Commands=addupgrade Twk_Upgrade_Crossbow_Range
+
+Texts=<< Unlock Crossbow Reload Speed >>
+Commands=addupgrade Twk_Upgrade_Crossbow_ReloadSpeed
+
+Texts=<< Unlock Pistol Reload Speed 1 >>
+Commands=addupgrade Twk_Upgrade_PistolReloadSpeed1
+
+Texts=<< Unlock Pistol Reload Speed 2 >>
+Commands=addupgrade Twk_Upgrade_PistolReloadSpeed2
+
+Texts=<< Unlock Pistol Accuracy 1 >>
+Commands=addupgrade Twk_Upgrade_Pistol_Accuracy1
+
+Texts=<< Unlock Pistol Accuracy 2 >>
+Commands=addupgrade Twk_Upgrade_Pistol_Accuracy2
+
+Texts=<< Unlock Pistol Magazine +1 >>
+Commands=addupgrade Twk_Upgrade_PistolMagazine1
+
+Texts=<< Unlock Pistol Magazine +2 >>
+Commands=addupgrade Twk_Upgrade_PistolMagazine2
+
+Texts=<< Unlock Pistol Magazine +3 >>
+Commands=addupgrade Twk_Upgrade_PistolMagazine3
+
+Texts=<< Unlock Spring Razor Radius Upgrade >>
+Commands=addupgrade Twk_Upgrade_SpringRazorPouch
+
+Texts=<< Unlock Sword Versus >>
+Commands=addupgrade Twk_Upgrade_Sword
+
+Texts=<< Unlock Instant Sleep Arrows Upgrade
+Commands=addupgrade Twk_Upgrade_InstantSleepArrow
+
+
+[Equipment Upgrades]
+
+Texts=Unlock Spyglass (Mask) >>
+Commands=addupgrade Twk_Upgrade_Spyglass1
+
+Texts=<< Unlock Spyglass (Mask Optics Upgrade) >>
+Commands=addupgrade Twk_Upgrade_Spyglass2
+
+Texts=<< Unlock Pistol Ammo Pouch +2 >>
+Commands=addupgrade Twk_Upgrade_AmmoPouch2
+
+Texts=<< Unlock Pistol Ammo Pouch +4 >>
+Commands=addupgrade Twk_Upgrade_AmmoPouch4
+
+Texts=<< Unlock Crossbow Quiver Capacity +2 >>
+Commands=addupgrade Twk_Upgrade_QuiverCapacity2
+
+Texts=<< Unlock Crossbow Quiver Capacity +4 >>
+Commands=addupgrade Twk_Upgrade_QuiverCapacity4
+
+Texts=<< Unlock Grenade Belt +1 >>
+Commands=addupgrade Twk_Upgrade_GrenadeBelt
+
+Texts=<< Unlock Springrazor Pouch +1 >>
+Commands=addupgrade Twk_Upgrade_SpringRazorPouch
+
+Texts=<< Unlock Armor >>
+Commands=addupgrade Twk_Upgrade_Armor
+
+Texts=<< Unlock Boot Soles 1 >>
+Commands=addupgrade Twk_Upgrade_SilentRunning
+
+Texts=<< Unlock Boot Soles 2 >>
+Commands=addupgrade Twk_Upgrade_SilentSprinting
+
+Texts=<< Unlock Bone Charms Capacity 1 >>
+Commands=addupgrade Twk_Upgrade_BoneCharms
+
+Texts=<< Unlock Bone Charms Capacity 2
+Commands=addupgrade Twk_Upgrade_BoneCharms2
+
+
+[Aim Assist]
+Texts= Toggle Aim Assist
+Commands=PlayerToggleAimAssist
+
+
+[Chaos]
+Texts=Full Chaos >>
+Commands=adddarkness 300
+Texts=<< Chaos Level +1 >>
+Commands=adddarkness 30
+Texts=<< Chaos Level -1  >>
+Commands=adddarkness -30
+Texts=<< Min Chaos
+Commands=adddarkness -300
+
+
+[Stats Reports]
+Texts=Show Memory Usage >>
+Commands=dmem update 60
+Texts=<< hide Memory Usage >>
+Commands=dmem
+Texts=<< Show Global >>
+Commands=dstat
+Texts=<< stat Player >>
+Commands=stat Player
+Texts=<< stat NPC >>
+Commands=stat NPC
+Texts=<< stat AIBehavior >>
+Commands=stat AIBehavior
+Texts=<< stat AIBehavior-CombatMelee >>
+Commands=stat AIBehavior-CombatMelee
+Texts=<< stat DisPawn
+Commands=stat DisPawn
+
+
+[ShowDebug]
+Texts=AnimState >>
+Commands=ShowDebug AnimState
+Texts=<< Attributes >>
+Commands=ShowDebug Attributes
+Texts=<< Blood >>
+Commands=ShowDebug Blood
+Texts=<< Inventory >>
+Commands=ShowDebug Inventory
+Texts=<< Visibility >>
+Commands=exec DebugVisibility.txt
+Texts=<< LOS >>
+Commands=exec DebugLOS.txt
+Texts=<< Vision Cone >>
+Commands=exec DebugVisionCone.txt
+Texts=<< PlayerState >>
+Commands=ShowDebug PlayerState
+Texts=<< PlayerCamera >>
+Commands=ShowDebug PlayerCamera
+Texts=<< Stealth Beep
+Commands=exec StealthBeep.txt
+Texts=<< Debug Stealth
+Commands=exec DebugStealth.txt
+
+
+[AI]
+Texts=AIDumb >>
+Commands=AIDumb
+Texts=<< AIBlind >>
+Commands=AIBlind
+Texts=<< AIDeaf >>
+Commands=AIDeaf
+Texts=<< AINumb >>
+Commands=AINumb
+Texts=<< AIDontAttack >>
+Commands=AIDontAttack
+Texts=<< AISetDebug >>
+Commands=AISetDebug
+Texts=<< NPCDestroy >>
+Commands=NPCDestroy
+Texts=<< NPCDestroyNonSelected
+Commands=NPCDestroyNonSelected
+
+
+[General Settings]
+Texts=Enable Gore >>
+Commands=GoreEnable 1
+Texts=<< Disable Gore
+Commands=GoreEnable 0
+
+[DLC Lock<->Unlock]
+Texts=DLC 1 >>
+Commands=SwitchDLCLock 0
+Texts=DLC 2 >>
+Commands=SwitchDLCLock 1
+Texts=DLC 3 >>
+Commands=SwitchDLCLock 2
+Texts=DLC 4 >>
+Commands=SwitchDLCLock 3
+Texts=DLC 5 >>
+Commands=SwitchDLCLock 4
+Texts=DLC 6 >>
+Commands=SwitchDLCLock 5
+Texts=DLC 7 >>
+Commands=SwitchDLCLock 6
+Texts=DLC 8 >>
+Commands=SwitchDLCLock 7
+Texts=DLC 9 >>
+Commands=SwitchDLCLock 8
+Texts=<< DLC 10
+Commands=SwitchDLCLock 9
+[Quit Game]
+Commands=Exit
+
+
+[IniVersion]
+0=1253178288.000000
